@@ -14,7 +14,7 @@ Everything on screen is live Hedera testnet activity. No slides except the archi
 Terminal A:
 
 ```bash
-npm create scaffold-hbar@latest -- --template <owner>/hedera-agent-passport
+npm create scaffold-hbar@latest -- --template chapaevv123/hedera-agent-passport
 ```
 
 > "Agent Passport is a Scaffold-HBAR template. One command gives an AI agent a Hedera identity, an HCS-10 communication channel and a decision log anyone can verify. The CLI picks Next.js, no Solidity and npm, because that's all this template needs."

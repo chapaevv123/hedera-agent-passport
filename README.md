@@ -5,7 +5,7 @@
 Agent Passport is a [Scaffold-HBAR](https://docs.hedera.com/solutions/tools/scaffold-hbar) template built on the [HCS-10 OpenConvAI](https://hol.org/docs/standards/hcs-10) standard from Hashgraph Online. One command registers your agent on Hedera testnet with its own account, an HCS-11 profile, HCS-10 inbound and outbound topics and a registry entry. It then opens an HCS-10 connection to a peer agent and gives you a skill interface: your agent perceives, decides, and publishes each decision as a consensus-timestamped HCS-10 message. The included web UI reads everything back from the Mirror Node, so anyone can verify what your agent did without trusting your server.
 
 ```bash
-npm create scaffold-hbar@latest -- --template <owner>/hedera-agent-passport
+npm create scaffold-hbar@latest -- --template chapaevv123/hedera-agent-passport
 ```
 
 ---
@@ -100,7 +100,7 @@ Remove the standard and nothing is left. The agent's identity _is_ its HCS-11 pr
 **1. Scaffold**
 
 ```bash
-npm create scaffold-hbar@latest -- --template <owner>/hedera-agent-passport
+npm create scaffold-hbar@latest -- --template chapaevv123/hedera-agent-passport
 cd <your-project>
 ```
 
