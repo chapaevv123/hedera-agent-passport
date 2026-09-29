@@ -1,0 +1,36 @@
+{
+  "name": "hedera-agent-passport",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Scaffold-HBAR template: HCS-10 identity, communication and decision log for AI agents on Hedera.",
+  "license": "MIT",
+  "workspaces": [
+    "packages/agent",
+    "packages/nextjs"
+  ],
+  "scripts": {
+    "agent:register": "npm run register -w @sh/agent",
+    "agent:act": "npm run act -w @sh/agent",
+    "agent:status": "npm run status -w @sh/agent",
+    "agent:listen": "npm run listen -w @sh/agent",
+    "dev": "npm run dev -w @sh/nextjs",
+    "start": "npm run dev -w @sh/nextjs",
+    "build": "npm run check-types -w @sh/agent && npm run build -w @sh/nextjs",
+    "lint": "npm run lint -w @sh/agent && npm run lint -w @sh/nextjs",
+    "test": "npm run test -w @sh/agent",
+    "format": "prettier --write .",
+    "check:eligibility": "node scripts/check-eligibility.mjs"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  },
+  "engines": {
+    "node": ">=22.15.0"
+  },
+  "overrides": {
+    "protobufjs@>=8.0.0 <8.8.0": "^8.8.0",
+    "@grpc/grpc-js@>=1.12.0 <1.12.7": "^1.12.7",
+    "ws@>=8.0.0 <8.21.0": "^8.21.0",
+    "postcss@<8.5.23": "^8.5.28"
+  }
+}

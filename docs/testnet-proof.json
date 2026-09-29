@@ -1,0 +1,14 @@
+{
+  "network": "testnet",
+  "registryTopicId": "0.0.10775907",
+  "agentAccountId": "0.0.10775908",
+  "peerAccountId": "0.0.10776005",
+  "connectionTopicId": "0.0.10776024",
+  "decisionSequenceNumbers": [1, 2, 3],
+  "externalExchange": {
+    "connectionTopicId": "0.0.10777060",
+    "externalAccountId": "0.0.10776869",
+    "questionSequenceNumber": 1,
+    "answerSequenceNumber": 2
+  }
+}
